@@ -39,7 +39,7 @@ namespace UIToolkitDemo
             Debug.Log("Door opens now.");
             this.bDoorOpen = true;
 
-            if (other.tag == "Player" && !myAudio.isPlaying) ;
+            if (other.tag == "Player" && !myAudio.isPlaying);
             {
                 this.myAudio.PlayOneShot(this.doorOpen, 1f);
                 this.door.sharedMaterial = this.open;
